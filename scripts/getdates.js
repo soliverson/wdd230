@@ -1,5 +1,8 @@
-const modified = new Date(document.lastModified).toString();
-const year = new Date().getFullYear().toString();
+const currentYear = new Date().getFullYear();
+const lastModified = new Date(document.lastModified);
+const yearSpan = document.getElementById("year");
+const lastModifiedParagraph = document.getElementById("lastModified");
 
-document.querySelector('#copyright').innerHTML = `&copy;${year}`;
-document.querySelector('#modified').textContent = modified;
+yearSpan.textContent = currentYear;
+
+lastModifiedParagraph.textContent = `Last modified: ${lastModified.toLocaleString()}`;

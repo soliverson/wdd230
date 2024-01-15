@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
     font-family:'Libre Caslon', Roboto, monospace;
     background-color:#395a7f;
-    color: #333
+    color: #333;
+    width: 100%;
 }
 header {
     display: flex;
@@ -16,41 +15,33 @@ header {
     padding: 1.5rem;
     color:white;
     text-align: center;
+    height: 30%;
 }
 
+header p {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
 
-header img {
-        width: 150px;
+.profile-img {
+        margin: 0 auto;
+        width: 100px;
         height: auto;
         border-radius: 3%;
         border: 1px solid #ece6e6;
         box-shadow: 0 0 30px rgb(129, 141, 129);
-        margin-left: 20%;
     }
-
-header h1{
-    flex-grow: 1; 
-    text-align: left;
-    margin-left: 100px;
-    font-family: Libre Caslon;
-    font-size: 3rem;
-    letter-spacing: 3px;
-  }   
 
 
 nav {
+    display:grid;
     background: black;
     color: white;
     font-size: 1.5rem;
+    text-align: center;
 }
 
-nav ul{
-    background-color: black;
-    font-size: 1.5rem;
-}
-nav li {
-    justify-self: center;
-}
 
 nav a{
     color: white;
@@ -62,49 +53,38 @@ nav a{
     padding: 20px;
 }
 
-h2{
+nav a:hover{
+    background-color:aliceblue;
+}
+
+.frontend{
+    color: 395a7f;
     text-align: center;
     letter-spacing: 0.5px;
     font-size: 2rem;
+    border-bottom: 1px #395a7f;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-main{
-    padding: 20px;
-    display: grid;
-    margin: 0 auto;
-    grid-column: 2/3;
+
+.card {
     text-align: center;
-    font-family: "Roboto";
-    grid-gap: 20px;
-}
-
-.card{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,100px);
-    background-image: linear-gradient(to bottom, #006eb6 30%, transparent 30%);
-    color: white;
-    font-size: x-large;
-    border: groove #000;
-    margin: 50px;
+    width: 80%;
+    margin-left: 6% ;
+    margin-right:6% ;
+    outline: 2px lightgray solid;
+    border-radius: 3px;
 }
 
 
-ul{
-    grid-column: 1;
-    text-align: initial;
+.card ul{
+list-style: none;
 }
 
-.placeholders{
-    color: #000;
-    text-align: center;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-footer{
+.footer{
     background-color: #395a7f;
-    color: #fff;
-    padding: 10px 20px;
+    margin:0 auto;
+    justify-content: center;
     text-align: center;
 }
