@@ -1,5 +1,9 @@
-const modified = new Date(document.lastModified).toString();
-const year = new Date().getFullYear().toString();
+const now = new Date();
+const currentYear = now.getFullYear();
+let dateTime = document.lastModified;
 
-document.querySelector('#copyright').innerHTML = `&copy;${year}`;
-document.querySelector('#modified').textContent = modified;
+const domCurrentYear = document.querySelector('#current-year');
+domCurrentYear.innerText = currentYear;
+
+const lastModified = document.querySelector('#current-date');
+lastModified.innerText = dateTime
