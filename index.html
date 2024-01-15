@@ -7,16 +7,16 @@
     <meta name="description" content="WDD 230 - Web Frontend Development Stacy Oliverson course assignment portal">
     <meta name="author" content=" Stacy Oliverson">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>
-            <img class ="profile-img" src="images/StacyImage.jpg" alt="Stacy Oliverson Picture">
-            <p>Stacy Oliverson</p>
-        </h1>
+    <header class="background-color">
+        <img class ="profile-img" src="images/StacyImage.jpg" alt="Stacy Oliverson Picture">
+        <h1>Stacy Oliverson</h1>
     </header>
     <nav>
-        <a href="https://soliverson.github.io/wdd230" class="active">Home</a>
+        <a href="#" class="active">Home</a>
         <a href="lesson03/chamber-site-plan.html" class="active">Site Plan</a>
         <a href="chamber/" class="active">Chamber</a>
         <a href="https://www.byui.edu/" target="_blank" class="active">BYU-Idaho</a>
@@ -24,32 +24,34 @@
     <main>
         <h2 class="frontend">WDD 230: Web Frontend Development</h2>
         <section class="card" class="learning-activities">
-            <h3>Learning Activities</h3>
+            <h3 class="background-color">Learning Activities</h3>
             <ul>
-                <li><a>01:</a></li>
-                <li><a>02:</a></li>
-                <li><a>03:</a></li>
-                <li><a>04:</a></li>
-                <li><a>05:</a></li>
-                <li><a>06:</a></li>
-                <li><a>07:</a></li>
-                <li><a>08:</a></li>
-                <li><a>09:</a></li>
-                <li><a>10:</a></li>
+                <li><a href="#">01:</a></li>
+                <li><a href="#">02:</a></li>
+                <li><a href="#">03:</a></li>
+                <li><a href="#">04:</a></li>
+                <li><a href="#">05:</a></li>
+                <li><a href="#">06:</a></li>
+                <li><a href="#">07:</a></li>
+                <li><a href="#">08:</a></li>
+                <li><a href="#">09:</a></li>
+                <li><a href="#">10:</a></li>
             </ul>
         </section>
         <section class="card" class="information">
-            <h3>Information</h3>
+            <h3 class="background-color">Information</h3>
             <p>Weather: <span id="weather">Placeholder Weather</span></p>
             <p>Number of Visits: <span id="visits">Placeholder Visits</span></p>
         </section>
     </main>
     <footer>
-        <footer class="footer">
-            <p class ="footer-paragraph-1"></p>&copy; <span id="year"></span> | Stacy Oliverson | Idaho, United States</p>
-            <p id="lastmodified"></p>
-    </footer>
-    <script src="scripts/getDates.js"></script>
-    
+        <footer class="background-color">
+            <div class="footer-container">
+                <p>&copy; <span id="year"></span></p>
+                <p>| Stacy Oliverson | Idaho, United States <img src="images/flag.jpg" alt="USA Flag"></p>
+            <p class="last-update">Last updated:  <span id="current-date"></span></p>
+            </div>
+    </footer>  
+
 </body>
 </html>

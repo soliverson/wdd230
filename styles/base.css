@@ -1,90 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto&display=swap');
 
-body{
-    font-family:'Libre Caslon', Roboto, monospace;
-    background-color:#395a7f;
-    color: #333;
-    width: 100%;
+
+:root{
+    --main-color: #395a7f;
+    --text-color: white;
 }
-header {
+
+body{
+font-family: 'Libre Caslon', sans-serif;
+max-width: 800px;
+margin: 0 auto;
+font-size: 1.5rem;
+color: var(--text-color);
+}
+
+.background-color{
+    background-color: #395a7f;;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Lobster', sans-serif;
+    padding: .5rem;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+header{
     display: flex;
     align-items: center;
-    padding: 20px;
     justify-content: center;
-    background-color: #395a7f;
-    padding: 1.5rem;
-    color:white;
-    text-align: center;
-    height: 30%;
+    font-size: 20px;
 }
 
-header p {
-    margin: 0 auto;
-    color: white;
-    text-align: center;
+header img{
+    margin: 1rem;
+    border-radius: .5rem;
+    border: 2px solid white;
 }
 
-.profile-img {
-        margin: 0 auto;
-        width: 100px;
-        height: auto;
-        border-radius: 3%;
-        border: 1px solid #ece6e6;
-        box-shadow: 0 0 30px rgb(129, 141, 129);
-    }
-
-
-nav {
-    display:grid;
-    background: black;
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 nav a{
-    color: white;
-    text-align: center;
+    padding: .5rem;
+    color: var(--text-color);
+    font-size: 1.75rem;
     text-decoration: none;
-    font-family: "Libre Caslon";
-    font-weight: bold;
-    display: block;
-    padding: 20px;
 }
 
 nav a:hover{
-    background-color:aliceblue;
+    color: yellow;
 }
 
-.frontend{
-    color: 395a7f;
-    text-align: center;
-    letter-spacing: 0.5px;
-    font-size: 2rem;
-    border-bottom: 1px #395a7f;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-
-.card {
-    text-align: center;
-    width: 80%;
-    margin-left: 6% ;
-    margin-right:6% ;
-    outline: 2px lightgray solid;
-    border-radius: 3px;
-}
-
-
-.card ul{
-list-style: none;
-}
-
-.footer{
-    background-color: #395a7f;
-    margin:0 auto;
+h2{
+    display: flex;
     justify-content: center;
-    text-align: center;
+    margin-bottom: 0;
+    color: white;
+}
+
+main hr {
+    border: none; 
+    height: 2px; 
+    background-color: #333; 
+    margin-bottom: 10px; 
+    margin-top: 0;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+.card ul li{
+    margin: 1rem 0;
+}
+
+.card p{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer p{
+    margin: 1rem 0;
+}
+
+footer img{
+    max-height: 33px;
+    margin: 0 .5rem;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+}
+
+.last-update{
+    color: yellow;
 }
