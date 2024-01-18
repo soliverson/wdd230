@@ -53,13 +53,13 @@ img {
       display: grid;
       grid-template-columns: 1fr;
       max-width: 900px;
-      line-height: 1.9em;
+      line-height: 2em;
       text-align: center;
   }
   
   main section {
-      margin: 0.7rem;
-      padding: 0 1rem;
+      margin: 1rem;
+      padding: 0 2rem;
       background-color: #ad8990;
       border-radius: 1rem;
   }
@@ -83,14 +83,14 @@ img {
       margin: 15px;
       font-size: 20px;
       line-height: 1.2;
-      padding: .5rem;
+      padding: 1rem;
   }
   
 
   .card{
     background-color: #d9acb4;;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 3px;
   }
 
