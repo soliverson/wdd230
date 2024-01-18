@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-font-family: 'Libre Caslon', sans-serif;
+font-family: 'Roboto', sans-serif;
 max-width: 800px;
 margin: 0 auto;
 font-size: 1.5rem;
@@ -22,14 +21,14 @@ color: black
 }
 
 h1{
-    font-family: 'Libre Caslon', serif;
+    font-family: 'Roboto', sans-serif;
     padding: .5rem;
     font-size: 3rem;
     color: white;
 }
 
 header{
-    font: 'Libre Caslon';
+    font: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
