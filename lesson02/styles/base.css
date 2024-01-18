@@ -19,11 +19,10 @@ body {
     background-color: whitesmoke;
     max-width: 800px;
     margin: auto;
-    display: center;
 }
 img {
     max-width: 200px;
-    display: stretch;
+    display: center;
     border-radius: 3px;
   }
 
@@ -35,7 +34,7 @@ img {
     color: black;
     text-align: center;
     padding: 1rem;
-    margin: 0, auto;
+    margin: 0 auto;
     border-radius: 1rem;
   }
   
@@ -95,8 +94,7 @@ img {
     border: 1px solid black;
     padding: .25rem;
     border-radius: 8px;
-    display: center;
-  }
+}
 
   .footer-container{
     display: flex;
