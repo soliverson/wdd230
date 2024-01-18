@@ -28,7 +28,6 @@ h1{
 }
 
 header{
-    font: 'Roboto';
     display: flex;
     align-items: center;
     justify-content: center;
