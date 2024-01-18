@@ -28,7 +28,7 @@ h1{
 }
 
 header{
-    font: 'Roboto', sans-serif;
+    font: 'Roboto';
     display: flex;
     align-items: center;
     justify-content: center;
