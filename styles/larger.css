@@ -1,6 +1,25 @@
 @media screen and (min-width:40rem) {
     nav{
+        display: flex !important;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        flex: 1;
+    }
+
+    .material-symbols-outlined{
+        display: none;
+    }
+
+
+    #nav a{
+        transform: scale(1) !important;
+        opacity: 1 !important;
     }
 }
