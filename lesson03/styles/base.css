@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
+
+:root {
+    --blue: #284b63ff;
+    --White: #FFFFFF;
+    --Green: #3c6e71ff;
+    --Gray: #d9d9d9ff;
+}
+
+html{
+    background-color: var(--blue);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+header img{
+    margin: 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--gray);
+}
+
+header p{
+    font-size: 3rem;
+    font-family: 'Bangers', system-ui;
+}
+
+
+body{
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+main p{
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+ul, ul li, footer p{
+    font-size: 1.5rem;
+}
+
+
+nav{
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+nav a{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Bangers', system-ui;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(green)
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--blue);
+    color: var(--white);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 40vw;
+    height: auto;
+}
+
+.color-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color-container span{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.color-container span:nth-child(1){
+    background-color: var(--grinch-green);
+}
+
+.color-container span:nth-child(2){
+    background-color: var(--pure-white);
+    color: black;
+}
+
+.color-container span:nth-child(3){
+    background-color: var(--cream);
+    color: black;
+}
+
+.color-container span:nth-child(4){
+    background-color: var(--grinch-red);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Pacifico', cursive;
+    color: var(--pure-white);
+    background-color: var(--bright-red);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-family: 'Amatic SC', cursive;
+    font-size: 16px;
+}
+
+#color-on-color{
+    background-color: var(--grinch-red);
+    color: white;
+}
+
+.wire-frame-h2{
+    text-align: center;
+    font-size: 2.5rem;;
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--grinch-red);
+    color: var(--pure-white);
+    text-align: center;
+    margin: 1rem 0; 
+}
+
+.footer-container{
+   padding: .5rem;
+}
+
+footer img{
+    max-height: 1rem;
+    margin: 0 .5rem;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+}

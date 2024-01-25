@@ -1,0 +1,42 @@
+@media screen and (min-width: 500px){
+    nav{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header p{
+        font-size: 8vw;
+    }
+
+    @keyframes rotate {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(5deg);
+        }
+    }
+    
+    #nav a {
+        display: block; 
+        background-color: white;
+        padding: .5rem;
+        border: 1px solid var(--grinch-red);
+        border-radius: 5%;
+        animation: rotate 1s infinite alternate;
+    }
+    
+    @keyframes rotateReverse {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(-5deg);
+        }
+    }
+    
+    #nav a:nth-child(even) { /* For even-numbered links, if you want alternate rotation */
+        animation: rotateReverse 1s infinite alternate;
+    }
+    
+}

@@ -9,14 +9,9 @@
     <title>Idaho Falls Chamber of Commerce</title>
 
     <!-- Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalized.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/getdates.js" defer></script>
 
 </head>
 
@@ -37,7 +32,7 @@
         <p>Color Scheme:</p>
         <p></p>
         <div class="color-container">
-            <span>Primary COlor: #284b63ff - background-color</span>
+            <span>Primary Color: #284b63ff - background-color</span>
             <span>Secondary Color: #FFFFFF - main text color</span>
             <span>Accent 1 color: #3c6e71ff - Nav background-color</span>
             <span>Accent 2 color: #d9d9d9ff - nav text & footer background-color</span>
@@ -46,15 +41,22 @@
         <hr>
         <p>Typography:</p>
             </main>
-    <footer>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92622.7729403267!2d-112.03370705!3d43.49270405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594e739512b5%3A0x2311c9fc094c49c9!2sIdaho%20Falls%2C%20ID!5e0!3m2!1sen!2sus!4v1706113408367!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="background-color">
         <div class="footer-container">
-            <p>&copy;<span id="current-year"></span></p>
-            <p>Stacy Oliverson</p>
-            <p class="footer-box">Idaho, USA <img src="images/usa-flag.jpg" alt="USA Flag"> </p>
-            <p class="last-update">Last updated date: <span id="current-date"></span></p>
+            <p>&copy; <span id="current-year"></span></p>
+            <p class="footer-box">Stacy Oliverson | Idaho, USA | <img src="images/flag.jpg" alt="USA Flag"></p>
+            <p class="last-update">Last updated: <span id="current-date"></span></p>
         </div>
     </footer>
-</body>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 
+</body>
 
 </html>
