@@ -26,7 +26,7 @@ header img{
 
 header p{
     padding: 1rem;
-    font-size: 8rem;
+    font-size: 4dvb;
     font-family: 'Bangers', system-ui;
     color: var(--lightgray);
 }
@@ -52,12 +52,12 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem 0;
+    padding: .2rem 0;
 }
 
 nav a{
     color: var(--lightgray);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
