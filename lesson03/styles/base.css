@@ -1,31 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
 
 :root {
-    --blue: #284b63ff;
-    --White: #FFFFFF;
-    --Green: #3c6e71ff;
-    --Gray: #d9d9d9ff;
+    --jetblue: #284b63ff;
+    --wwhite: #FFFFFF;
+    --darkgreen: #3c6e71ff;
+    --lightgray: #d9d9d9ff;
 }
 
 html{
-    background-color: var(--blue);
+    background-color: var(--lightgray);
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: left;
+    background-color: var(--jetblue);
 }
 
 header img{
     margin: 1rem;
     border-radius: .5rem;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--lightgray);
 }
 
 header p{
-    font-size: 3rem;
+    padding: 1rem;
+    font-size: 8rem;
     font-family: 'Bangers', system-ui;
+    color: var(--lightgray);
 }
 
 
@@ -45,7 +48,7 @@ ul, ul li, footer p{
 
 
 nav{
-    background-color: var(--green);
+    background-color: var(--darkgreen);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,21 +56,21 @@ nav{
 }
 
 nav a{
-    color: var(--white);
+    color: var(--lightgray);
     font-size: 2rem;
     font-weight: bolder;
-    font-family: 'Bangers', system-ui;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
 nav a:hover{
-    color: var(green)
+    color: var(--wwhite)
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--lightgray);
+    color: var(--jetblue);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -91,27 +94,27 @@ body{
 }
 
 .color-container span:nth-child(1){
-    background-color: var(--grinch-green);
+    background-color: var(--lightgray);
 }
 
 .color-container span:nth-child(2){
-    background-color: var(--pure-white);
+    background-color: var(--jetblue);
     color: black;
 }
 
 .color-container span:nth-child(3){
-    background-color: var(--cream);
+    background-color: var(--darkgreen);
     color: black;
 }
 
 .color-container span:nth-child(4){
-    background-color: var(--grinch-red);
+    background-color: var(--wwhite);
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Pacifico', cursive;
-    color: var(--pure-white);
-    background-color: var(--bright-red);
+    font-family: 'Roboto', sans-serif;
+    color: var(--jetblue);
+    background-color: var(--green);
 }
 
 h1{
@@ -119,13 +122,13 @@ h1{
 }
 
 p{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 #color-on-color{
-    background-color: var(--grinch-red);
-    color: white;
+    background-color: var(--jetblue);
+    color: var(--darkgreen);
 }
 
 .wire-frame-h2{
@@ -139,8 +142,8 @@ picture{
 }
 
 footer{
-    background-color: var(--grinch-red);
-    color: var(--pure-white);
+    background-color: var(--darkgreen);
+    color: var(--wwhite);
     text-align: center;
     margin: 1rem 0; 
 }

@@ -1,4 +1,12 @@
 @media screen and (min-width: 500px){
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
+
+:root {
+    --jetblue: #284b63ff;
+    --wwhite: #FFFFFF;
+    --darkgreen: #3c6e71ff;
+    --lightgray: #d9d9d9ff;
+}
     nav{
         flex-direction: row;
         justify-content: space-evenly;
@@ -19,24 +27,10 @@
     
     #nav a {
         display: block; 
-        background-color: white;
+        background-color: var(--darkgreen);
         padding: .5rem;
-        border: 1px solid var(--grinch-red);
+        border: 1px solid var(--darkgreen);
         border-radius: 5%;
-        animation: rotate 1s infinite alternate;
-    }
-    
-    @keyframes rotateReverse {
-        0%, 100% {
-            transform: rotate(0deg);
+            }
+   
         }
-        50% {
-            transform: rotate(-5deg);
-        }
-    }
-    
-    #nav a:nth-child(even) { /* For even-numbered links, if you want alternate rotation */
-        animation: rotateReverse 1s infinite alternate;
-    }
-    
-}
