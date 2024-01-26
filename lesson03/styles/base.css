@@ -23,7 +23,7 @@ header img{
     margin: 2rem;
     border-radius: 3rem;
     border: 3px solid var(--lightgray);
-    box-shadow: 0 0 10px var(--lightgray);
+    box-shadow: 0 0 13px var(--lightgray);
 }
 
 header p{
