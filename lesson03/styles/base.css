@@ -33,6 +33,11 @@ header p{
     color: var(--lightgray);
 }
 
+header h1{
+    font-size: 3dvb;
+    font-family: 'Bangers', system-ui;
+    color: var(--lightgray);
+}
 
 body{
     padding: 2rem;
