@@ -1,6 +1,5 @@
 @media screen and (min-width: 500px){
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
-
+    
 :root {
     --jetblue: #284b63ff;
     --wwhite: #FFFFFF;
@@ -32,5 +31,4 @@
         border: 1px solid var(--darkgreen);
         border-radius: 5%;
             }
-   
         }
