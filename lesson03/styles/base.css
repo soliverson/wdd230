@@ -19,13 +19,15 @@ header{
 }
 
 header img{
-    margin: 1rem;
-    border-radius: .5rem;
-    border: 2px solid var(--lightgray);
+    width: 250px;
+    margin: 2rem;
+    border-radius: 3rem;
+    border: 3px solid var(--lightgray);
+    box-shadow: 0 0 10px var(--lightgray);
 }
 
 header p{
-    padding: 1rem;
+    padding: .25rem;
     font-size: 4dvb;
     font-family: 'Bangers', system-ui;
     color: var(--lightgray);
@@ -33,7 +35,7 @@ header p{
 
 
 body{
-    padding: 1rem;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
