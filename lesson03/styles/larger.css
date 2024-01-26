@@ -1,34 +1,58 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 55rem) {
+    body{
+        margin: auto;
+    }
+    header{
+        font-size: 1.5rem;
+    }
     
-:root {
-    --jetblue: #284b63ff;
-    --wwhite: #FFFFFF;
-    --darkgreen: #3c6e71ff;
-    --lightgray: #d9d9d9ff;
-}
+    #menu{
+        display: none;
+    }
     nav{
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-around;
     }
 
-    header p{
-        font-size: 8vw;
+    ul.navigation, ul.navigation.open{
+        display: flex;       
     }
 
-    @keyframes rotate {
-        0%, 100% {
-            transform: rotate(0deg);
-        }
-        50% {
-            transform: rotate(5deg);
-        }
+    ul.navigation li{
+        margin: 0 20px;
+        border: none;
     }
-    
-    #nav a {
-        display: block; 
-        background-color: var(--darkgreen);
-        padding: .5rem;
-        border: 1px solid var(--darkgreen);
-        border-radius: 5%;
-            }
-        }
+
+    nav ul li a {
+        padding: 10px;
+        font-weight: 700;  
+        font-size: 1.2rem;
+    }
+    .hero-message{
+        position: absolute;
+        width: 100%;
+        margin-left: 450px;
+        margin-top: -150px;
+        font-size: 2rem;
+        background-color: #353535;
+        color: #FFFFFF;
+        text-align: center;
+        opacity: .6;
+        border-radius: 10px;
+    }
+    .top-cards{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 20px;  
+    }
+
+}
+
+@media screen and (min-width: 70rem) {
+    .hero-message{
+        position: absolute;
+        top: 45%;
+        width: 60%;
+        font-size: 2.5rem;
+    }
+}
