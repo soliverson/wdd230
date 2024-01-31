@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #D9D9D9;
+    font-weight: 400;
+    color: #3C6E71;
+    margin: 0 auto;
+}
+h1, h2, h3, h4{
+    font-family: "Playfair Display", serif;
+}
+header{
+    display: flex;
+    background-color: #3C6E71;
+    color:#FFFFFF;
+    font-weight: 1000px;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+header h1{
+    margin-left: 50px;
+}
+
+header img {
+    width: 110px;
+    border-radius: 3%;
+    box-shadow: 1px 1px 5px #FFFFFF;
+    margin: 0 10px;    
+}
+nav{
+    font-family: 'Playfair Display', serif;
+    background-color: #284B63;
+}
+#menu{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#FFFFFF;
+    cursor: pointer;
+    width: 44px;
+    padding: .25rem 2vw;
+    margin-left: 90%;
+}
+#menu::before{
+    content: "\2630";
+}
+
+#menu.open::before{
+    content:"\2716";
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav li{
+    border: 1px solid #FFFFFF;
+}
+
+nav li:hover {
+    background-color: #353535;
+    opacity: .8;
+}
+
+ul.navigation li a{
+    display: block;
+    color:  #FFFFFF;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+ul.navigation{
+    display: none;
+    list-style-type: none;
+}
+ul.navigation.open{
+    display: block;
+}
+.active{
+    background-color:#284B63;
+}
+li.active.link a{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.hero{
+    position: relative;
+}
+#hero-image{
+    width: 100%;
+    height: auto;
+}
+.hero-message{
+    margin: 0;
+    width: 80%;
+    font-size: 1.2rem;
+    background-color: #353535;
+    color: #FFFFFF;
+    text-align: Right;
+    padding: 10px;
+}
+
+.community-card{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;   
+    text-align: center;   
+}
+
+.community-card p{
+    padding: 10px;  
+}
+
+.community{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+footer{
+    display: block;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center; 
+}
+
+footer img{
+    max-height: 13px;
+    margin: 0 .5rem;
+}
