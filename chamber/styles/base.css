@@ -118,12 +118,52 @@ li.active.link a{
     padding: 10px;  
 }
 
+.top-cards{
+    display:block;
+}
+
+.small-cards{
+    display: block;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 2px solid #284B63
+}
+
+.small-cards h2{
+    box-shadow: 1px 1px 5px #D9D9D9
+}
+
+.small-cards p{
+    padding: 10px;
+}
+
+.small-cards img{
+    margin:10px
+}
 .community{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
 }
 
+.business-cards{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.business-cards img{
+    width: 60%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.slide-card{
+    position: relative;
+    text-align: center;
+}
 
 footer{
     display: block;
