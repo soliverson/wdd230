@@ -13,7 +13,7 @@ const lastModified = document.querySelector('#current-date');
 lastModified.innerText = dateTime
 
 //declaring navigation variables
-const hamburguerElement = document.querySelector("#menu");
+const hamburgerElement = document.querySelector("#menu");
 const navElements = document.querySelector(".navigation");
 
 //declaring dark mode variables
@@ -21,9 +21,9 @@ const darkButton = document.getElementById('darkBtn');
 const main = document.querySelector('main')
 
 //adding class for open and close hamburguer menu
-hamburguerElement.addEventListener('click', () => {
+hamburgerElement.addEventListener('click', () => {
     navElements.classList.toggle('open');
-    hamburguerElement.classList.toggle('open');  
+    hamburgerElement.classList.toggle('open');  
 })
 
 //code for dark mode click
