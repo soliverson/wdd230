@@ -106,7 +106,7 @@ li.active.link a{
     padding: 10px;
 }
 
-.community-card{
+.next-event{
     display: flex;
     background-color:#3C6E71;
     color:#D9D9D9;
@@ -116,7 +116,7 @@ li.active.link a{
     align-items: center;
     justify-content:space-evenly;
 }
-.community-card img{
+.next-event img{
     width: 130%;
     height: auto;
     border-radius: 3px;
@@ -173,8 +173,7 @@ width: 65%;
 }
 
 .business-cards img{
-    width: 60%;
-    height: auto;
+    width: 50%;
     border-radius: 3px;
 }
 
@@ -182,6 +181,55 @@ width: 65%;
     position: relative;
     text-align: center;
 }
+
+.main-cards{
+    display: block;
+    padding-top: 1.5rem;
+    border-top: 3px solid #3C6E71;
+    margin:1.5rem;
+}
+.main-cards h2{
+    padding: 5px;
+    margin-left: 1rem;
+}
+
+.community-cards, .events-cards{
+    display:block;   
+}
+.community-card, .event-card{
+    margin: 10px;
+    box-shadow: 1px 1px 5px #FFFFFF;
+    background-color:#284B63;
+    color:#FFFFFF  
+}
+.event-card{
+    background-color: #15737d;
+    color: #FFFFFF;
+
+}
+.community-card img, .event-card img{
+    width: 100%;
+}
+.community-card h4, .event-card h4{
+    text-align: center;
+    padding: 5px;
+}
+.sidebar, .pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pictures{
+    margin-right: 20px;
+}
+
+.pictures img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
 
 footer{
     display: block;
@@ -195,3 +243,17 @@ footer img{
     max-height: 13px;
     margin: 0 .5rem;
 }
+
+
+
+
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+

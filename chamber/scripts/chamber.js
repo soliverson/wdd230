@@ -16,9 +16,6 @@ lastModified.innerText = dateTime
 const hamburgerElement = document.querySelector("#menu");
 const navElements = document.querySelector(".navigation");
 
-//declaring dark mode variables
-const darkButton = document.getElementById('darkBtn');
-const main = document.querySelector('main')
 
 //adding class for open and close hamburguer menu
 hamburgerElement.addEventListener('click', () => {
@@ -26,11 +23,23 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');  
 })
 
-//code for dark mode click
-darkButton.addEventListener('click',() =>{
-    main.classList.toggle('dark');
-})
 
 // get .visits and initialize element
 const visitsElement = document.querySelector(".visits");
+
+//mode button
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+		modeButton.textContent = "🕶️";
+	}
+});
 
