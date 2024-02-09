@@ -106,8 +106,8 @@ li.active.link a{
     padding: 10px;
 }
 
-.next-event{
-    display: flex;
+.next-content{
+    display: block;
     background-color:#3C6E71;
     color:#D9D9D9;
     margin: 25px auto;
@@ -116,12 +116,24 @@ li.active.link a{
     align-items: center;
     justify-content:space-evenly;
 }
-.next-event img{
-    width: 130%;
+.next-content img{
+    width: 10%;
     height: auto;
     border-radius: 3px;
 }
 
+.next-event h2{
+    padding: 5px;
+    margin-left: 2.5rem;
+}
+.next-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+    text-align: center;
+    font-size: 1.5rem;
+}
 .top-cards{
     display:block;
 }
@@ -160,21 +172,21 @@ li.active.link a{
 #weather-card{
 background-color:#3C6E71;
 color:#D9D9D9;
-margin: 25px auto;
-border-radius:10px;
+margin: 5px auto;
+border-radius:5px;
 text-align: center;
 font-size: 1.5rem;
-width: 65%;
+width: 77%;
 }
 .business-cards{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 1.5rem;
 }
 
 .business-cards img{
-    width: 50%;
-    border-radius: 3px;
+    width: 36%;
+    border-radius: 5px;
 }
 
 .slide-card{
@@ -203,7 +215,7 @@ width: 65%;
     color:#FFFFFF  
 }
 .event-card{
-    background-color: #15737d;
+    background-color: #3C6E71;
     color: #FFFFFF;
 
 }

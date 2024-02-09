@@ -43,31 +43,32 @@
     .top-cards{
         display: grid;
         grid-template-columns: 2fr 3fr;
-        column-gap: 20px;  
+        column-gap: 10px;  
     }
     .small-cards{
         border-bottom: none;
     }
 
     .business-cards{
-        margin-top: 30px;
+        margin-top: -125px;
+        margin-left: 150px;
     }
     
 
-    .next-event{
+    .next-content{
         display: flex;
+        flex-wrap: wrap-reverse;
         background-color:#3C6E71;
         color:#D9D9D9;
-        margin: 25px auto;
-        border-radius: 10px;
-        width: 100%;
+        margin: 15px auto;
+        border-radius: 5px;
+        width: 90%;
         align-items: center;
         justify-content:space-evenly;
     }
     .next-event img{
-        width: 130%;
+        width: 100%;
         height: auto;
-        border-radius: 3px;
     }
 
     .weather{
