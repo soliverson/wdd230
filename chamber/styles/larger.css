@@ -42,7 +42,7 @@
     }
     .top-cards{
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 2fr 1.5fr;
         column-gap: 10px;  
     }
     .small-cards{
@@ -51,7 +51,7 @@
 
     .business-cards{
         margin-top: -125px;
-        margin-left: 150px;
+        margin-left: 650px;
     }
     
 
