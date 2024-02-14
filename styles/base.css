@@ -117,7 +117,7 @@ nav a:hover{
 	top: 30px;
 	left: 30px;
 	background: radial-gradient(#fff, gray);
-	border: .5px solid gray(0,0,0,.75);
+	border: .5px solid gray;
     border-radius: .5rem;
 	padding: 1.5rem;
 	box-shadow: 0 0 10rem #fff;
