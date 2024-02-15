@@ -25,7 +25,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Chamber Logo" width="75" height="100">
+        <img src="images/logo.webp" alt="Chamber Logo" width="75" height="100">
         <h1>Idaho Falls Chamber of Commerce</h1>
     </header>
     <main>
@@ -45,7 +45,12 @@
             </ul>
         </nav>
         <div class="hero">
-            <img id="hero-image" src="images/idahofalls2.jpeg" alt="Arctic Circle Image">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/wdd230-small.webp" >
+                <source media="(max-width: 960px)" srcset="images/wdd230-medium.webp" >
+                <img src="images/wdd230-large.webp" alt="Arctic Circle" width="1279" height="640">
+            </picture>
+            
             <div class="hero-message">
                 <h2 id="message">Join the Chamber</h2>
                 <button id="hero-button">Click Here</button>  
