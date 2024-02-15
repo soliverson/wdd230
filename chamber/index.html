@@ -48,7 +48,7 @@
             <picture>
                 <source media="(max-width: 400px)" srcset="images/wdd230-small.webp" >
                 <source media="(max-width: 960px)" srcset="images/wdd230-medium.webp" >
-                <img src="images/wdd230-large.webp" alt="Arctic Circle" width="1279" height="640">
+                <img src="images/wdd230-large.webp" alt="People at a meeting" width="1279" height="640">
             </picture>
             
             <div class="hero-message">
@@ -73,7 +73,9 @@
                 <section id="weather-card">
                     <h3 class="background-color">Weather</h3>
                     <div class="info">Idaho Falls, Idaho </div>
-                    <div class="weather">☁️ 34°F </div>
+                        <p>Temperature: ☁️ 35°F</p>
+                        <p>Wind Speed: 5 mph</p>
+                        <p id="windChillResult"></div></p>
                 </section>
             </div>
         </div>
@@ -142,6 +144,7 @@
     
     <script src="scripts/chamber.js"></script>
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 </html>
