@@ -277,3 +277,52 @@ footer img{
 	font-size: 2rem;
 }
 
+/*------discover page--------*/
+
+.sidebar, .pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.welcome-message{
+    grid-row: 1/2;
+    background-color: #3C6E71;
+    color:#D9D9D9;
+    margin: 20px auto;
+    width: 80%; 
+    text-align: center;
+    padding: 20px;
+}
+
+
+.demographics{
+    grid-row: 3/6;
+    background-color: #284B63;
+    color: #D9D9D9;
+    margin: 20px auto;
+    width: 75%;
+    display: block;
+}
+
+.population, .employment, .mayor, .households, .personshousehold, .education{
+    margin: 0.7rem;
+    width: auto;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 0.2rem solid #D9D9D9;
+}
+.demographics h5{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom:1px solid #3C6E71;
+}
+.pictures{
+    margin-right: 20px;
+}
+
+.pictures img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}

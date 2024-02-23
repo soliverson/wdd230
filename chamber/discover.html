@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="description" content="Idaho Falls Chamber of Commerce">
+    <meta name="author" content="Stacy Oliverson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalized.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Idaho Falls Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soliverson.github.io/wdd230/chamber/images/logo.webp">
+    <meta property="og:url" content="https://soliverson.github.io/wdd230/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Chamber Logo" width="75" height="100">
+        <h1>Idaho Falls Chamber of Commerce</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="mode">
+                🕶️
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li class="active link"><a href="chambersite.html">Home</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Businesses</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/if-town-small.webp" >
+                <source media="(max-width: 960px)" srcset="images/if-town-medium.webp" >
+                <img src="images/if-town-large.webp" alt="Idaho Falls Water Tower" loading="lazy" width="1279" height="640">
+            </picture>
+        </div>
+        <div class="hero-message">
+            <h2 id="message">Discover Idaho Falls</h2>
+            <h3>Join the Chamber</h3>
+            <button id="hero-button" type="button" name="hero-button" onclick="window.location.href = 'join.html'"><b>Join</b></button>
+        </div>
+    </div>
+    <div class="main-discover">
+        <div class="sidebar">
+            <section class="welcome-message">
+                <h2><span class="visits">Welcome to the Discover Page!</span></h2>
+            </section>
+            <section id="weather-card">
+                <h2>Weather</h2>
+                <div class="weather">
+                    <p>☁️ 35°F</p>
+                </div>
+            </section>
+            <section class="demographics">
+                <div class="mayor">
+                    <h5>MAYOR</h5>
+                    <p>Rebecca Casper</p>
+                </div>
+                <div class="population">
+                    <h5>POPULATION</h5>
+                    <p>67,723 (2022)</p>
+                </div>
+                <div class="households">
+                    <h5>HOUSEHOLDS</h5>
+                    <p>23,924 (2018-2022)</p>
+                </div>
+                <div class="personshousehold">
+                    <h5>PERSONS PER HOUSEHOLD</h5>
+                    <p>2.69 (2018-2022)</p>
+                </div>
+                <div class="education">
+                    <h5>EDUCATION</h5>
+                    <p>90.4% have a High School Diploma (2018-2022)</p>
+                    <p>29.8% have a Bachelor's degree or higher (2018-2022</p>
+                </div>
+
+            </section>
+        </div>
+        <div class="pictures"> 
+            <picture>
+                <source srcset="images/IF-baseball-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-baseball-large.webp" media="(max-width: 3000px)">
+                <img src="images/IF-baseball-small.webp" alt="Idaho Falls Baseball" loading="lazy" width="800" height="500">
+            </picture>      
+            <picture>
+                <source srcset="images/IF-farm-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-farm-large.webp" media="(max-width: 3000px)">
+                <img src="images/if-farm-small.webp" alt="Farm" loading="lazy" width="800" height="500">
+            </picture>       
+            <picture>
+                <source srcset="images/IF-hockey-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-hockey-large.webp" media="(max-width: 3000px)">
+                <img src="images/IF-hockey-small.webp" alt="Hockey" loading="lazy" width="800" height="500">
+            </picture>                       
+            <picture>
+                <source srcset="images/IF-parade-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-parade-large.webp" media="(max-width: 3000px)">
+                <img src="images/If-parade-small.webp" alt="4th of July Parade" loading="lazy" width="800" height="500">
+            </picture>            
+            <picture>
+                <source srcset="images/if-rodeo-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-rodeo-large.webp" media="(max-width: 3000px)">
+                <img src="images/if-rodeo-small.webp" alt="Idaho Falls Rodeo" loading="lazy" width="800" height="500">
+            </picture>    
+            <picture>
+                <source srcset="images/IF-zoo-small.webp" media="(max-width: 500px)">
+                <source srcset="images/if-zoo-large.webp" media="(max-width: 3000px)">
+                <img src="images/IF-zoo-small.webp" alt="Zoo" loading="lazy" width="800" height="500">
+            </picture>         
+        </div>
+    </div>      
+
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span></p>
+        <p class="footer-box">Stacy Oliverson | Idaho, USA | <img src="images/flag.webp" alt="USA Flag"></p>
+        <p class="last-update">Last updated: <span id="current-date"></span></p>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
