@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+img{
+    animation: fade 15s;}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
 body{
 font-family: 'Roboto', sans-serif;
 max-width: 1000px;
