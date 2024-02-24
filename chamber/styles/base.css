@@ -298,9 +298,9 @@ footer img{
 .demographics{
     grid-row: 3/6;
     background-color: #284B63;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 20px auto;
-    width: 75%;
+    width: 60%;
     display: block;
 }
 
@@ -309,7 +309,7 @@ footer img{
     width: auto;
     padding: .5rem;
     font-size: 1rem;
-    border: 0.2rem solid #D9D9D9;
+    border: 0.2rem solid #FFFFFF;
 }
 .demographics h5{
     font-size: 1.8rem;
