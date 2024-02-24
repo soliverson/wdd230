@@ -280,14 +280,17 @@ li.active.link a {
 }
 
 .pictures {
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-top: 6px;
 }
 
 .pictures img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 10px;
+    margin: 15px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Footer styles */
