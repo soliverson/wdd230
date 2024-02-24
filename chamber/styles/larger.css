@@ -1,35 +1,38 @@
 @media screen and (min-width: 55rem) {
-    body{
+    body {
         margin: auto;
     }
-    header{
+
+    header {
         font-size: 1.5rem;
     }
-    
-    #menu{
+
+    #menu {
         display: none;
     }
-    nav{
+
+    nav {
         display: flex;
         justify-content: space-around;
     }
 
-    ul.navigation, ul.navigation.open{
-        display: flex;       
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
     }
 
-    ul.navigation li{
+    ul.navigation li {
         margin: 0 20px;
         border: none;
     }
 
     nav ul li a {
         padding: 10px;
-        font-weight: 700;  
+        font-weight: 700;
         font-size: 1.2rem;
     }
 
-    .hero-message{
+    .hero-message {
         position: absolute;
         width: 100%;
         margin-left: 50px;
@@ -41,51 +44,57 @@
         opacity: .9;
         border-radius: 10px;
     }
-    .top-cards{
+
+    .top-cards {
         display: grid;
         grid-template-columns: 2fr 1.5fr;
-        column-gap: 10px;  
+        column-gap: 10px;
     }
-    .small-cards{
+
+    .small-cards {
         border-bottom: none;
     }
 
-    .business-cards{
+    .business-cards {
         margin-top: -240px;
         margin-left: 650px;
     }
-    
 
-    .next-content{
+    .next-content {
         display: flex;
         flex-wrap: wrap-reverse;
-        background-color:#3C6E71;
-        color:#D9D9D9;
+        background-color: #3C6E71;
+        color: #D9D9D9;
         margin: 15px auto;
         border-radius: 5px;
         width: 90%;
         align-items: center;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
     }
-    .next-event img{
+
+    .next-event img {
         width: 100%;
         height: auto;
     }
 
-    .weather{
+    .weather {
         width: 70%;
     }
 
-    .community-cards, .events-cards{
-        display: flex;  
-        align-items: center; 
+    .community-cards,
+    .events-cards {
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
-    .community-card, .event-card{
+
+    .community-card,
+    .event-card {
         width: 25%;
         height: auto;
     }
-    .pictures{
+
+    .pictures {
         grid-row: 1/18;
         grid-column: 2/3;
         display: flex;
@@ -93,35 +102,41 @@
         justify-content: center;
         align-items: center;
     }
-    .pictures img{
+
+    .pictures img {
         width: 100%;
     }
-    .pictures img:hover{
+
+    .pictures img:hover {
         filter: contrast(50%);
-    }   
+    }
 }
 
-.main-discover{
+.main-discover {
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 20px;
 }
+
 .main-discover > div:nth-child(2) {
-    grid-column: 2 / span 1; /* Define a segunda coluna */
-    border-left: .5rem solid rgba(255,255,255,.5); /* Adiciona uma borda à direita da segunda coluna */
+    grid-column: 2 / span 1;
+    border-left: .5rem solid rgba(255, 255, 255, .5);
 }
-.welcome-message{
-    width: 90%; 
+
+.welcome-message {
+    width: 90%;
     font-size: 1.6rem;
 }
-#weather{
+
+#weather {
     width: 95%;
 }
-.demographics{
+
+.demographics {
     width: 80%;
 }
 
-.pictures{
+.pictures {
     grid-row: 1/18;
     grid-column: 2/3;
     display: flex;
@@ -129,16 +144,17 @@
     justify-content: center;
     align-items: center;
 }
-.pictures img{
+
+.pictures img {
     width: 100%;
 }
-.pictures img:hover{
-    filter: sepia(90%)
-}   
 
+.pictures img:hover {
+    filter: sepia(90%);
+}
 
 @media screen and (min-width: 70rem) {
-    .hero-message{
+    .hero-message {
         position: absolute;
         top: 45%;
         width: 60%;
