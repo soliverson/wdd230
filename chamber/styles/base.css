@@ -309,7 +309,7 @@ footer img{
     width: auto;
     padding: 2rem;
     font-size: .75rem;
-    border: 0.2rem solid #FFFFFF;
+    border: 0.3rem solid #FFFFFF;
 }
 .demographics h5{
     font-size: 1.8rem;
@@ -327,12 +327,5 @@ footer img{
     border-radius: 5px;
 }
 
-.hero1{
-    position: relative;
-}
-.hero1 img {
-	width: 100%;
-	height: 15em;
-	object-fit: cover;
-}
+
 

@@ -30,34 +30,3 @@ else{
 
 localStorage.setItem('lastVisitLocal', today);
 
-
-// WEATHER CODE
-
-//get the elements from the information card that is related to the weather
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("#description");
-const day1 = document.querySelector("#day1");
-const day2 = document.querySelector("#day2");
-const day3 = document.querySelector("#day3");
-
-
-
-async function apiFetch(){
-    try{
-        const response = await fetch(url);
-        if (response.ok){
-            const data = await response.json();
-            //console.log(data);
-            displayResults(data);
-        } else{
-            throw Error(await response.text());
-        }
-    } catch (error){
-       // console.log(error);
-    }
-}
-
-
-
-apiFetch();
