@@ -378,4 +378,9 @@ footer img {
         width: 95%;
         font-size: 0.6rem;
     }
+    .pictures {
+        margin-right: 0; /* Remove margin on smaller screens */
+        align-items: center;
+    }
+    
 }
