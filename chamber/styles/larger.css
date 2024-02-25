@@ -1,9 +1,97 @@
 @media screen and (min-width: 55rem) {
-    /* Your existing styles for larger screens */
+    body {
+        margin: auto;
+    }
 
-    .demographics {
-        width: 80%; /* Adjust width as needed */
-        font-size: 1rem; /* Adjust font size as needed */
+    header {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+    }
+
+    ul.navigation li {
+        margin: 0 20px;
+        border: none;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .hero-message {
+        position: absolute;
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 50px;
+        font-size: 2rem;
+        background-color: #353535;
+        color: #FFFFFF;
+        text-align: center;
+        opacity: .9;
+        border-radius: 10px;
+    }
+
+    .top-cards {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        column-gap: 10px;
+    }
+
+    .small-cards {
+        border-bottom: none;
+    }
+
+    .business-cards {
+        margin-top: -240px;
+        margin-left: 650px;
+    }
+
+    .next-content {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: #3C6E71;
+        color: #D9D9D9;
+        margin: 15px auto;
+        border-radius: 5px;
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .next-event img {
+        width: 100%;
+        height: auto;
+    }
+
+    .weather {
+        width: 70%;
+    }
+
+    .community-cards,
+    .events-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .community-card,
+    .event-card {
+        width: 25%;
+        height: auto;
     }
 
     .pictures {
@@ -24,23 +112,54 @@
     }
 }
 
-@media screen and (min-width: 70rem) {
-    /* Additional styles for even larger screens */
+.main-discover {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+}
 
+.main-discover > div:nth-child(2) {
+    grid-column: 2 / span 1;
+    border-left: .3rem solid rgba(255, 255, 255, .5);
+    margin-left: -20px;
+}
+
+.welcome-message {
+    width: 90%;
+    font-size: 1.6rem;
+}
+
+#weather {
+    width: 95%;
+}
+
+.demographics {
+    width: 80%;
+}
+
+.pictures {
+    grid-row: 1/18;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures img {
+    width: 100%;
+}
+
+.pictures img:hover {
+    filter: sepia(90%);
+}
+
+@media screen and (min-width: 70rem) {
     .hero-message {
         position: absolute;
         top: 45%;
         width: 60%;
         font-size: 2.5rem;
     }
-
-    .demographics {
-        width: 95%;
-        font-size: 0.6rem;
-    }
-
-    .pictures {
-        margin-right: 0; /* Remove margin on smaller screens */
-        align-items: center;
-    }
+    
 }

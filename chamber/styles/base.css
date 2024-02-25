@@ -383,4 +383,9 @@ footer img {
         grid-column: auto;
         margin-top: 20px;
     }
+        .pictures {
+            grid-row: auto;
+            grid-column: auto;
+            margin-top: 20px;
+    
 }
