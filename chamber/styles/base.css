@@ -372,20 +372,3 @@ footer img {
     margin-bottom: 8px;
     border-bottom: 2px solid #D9D9D9;
 }
-
-@media screen and (max-width: 768px) {
-    .demographics {
-        width: 95%;
-        font-size: 0.6rem;
-    }
-    .pictures {
-        grid-row: auto;
-        grid-column: auto;
-        margin-top: 20px;
-    }
-        .pictures {
-            grid-row: auto;
-            grid-column: auto;
-            margin-top: 20px;
-    
-}
