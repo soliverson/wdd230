@@ -379,8 +379,8 @@ footer img {
         font-size: 0.6rem;
     }
     .pictures {
-        margin-right: 0; /* Remove margin on smaller screens */
-        align-items: center;
+        grid-row: auto;
+        grid-column: auto;
+        margin-top: 20px;
     }
-    
 }
