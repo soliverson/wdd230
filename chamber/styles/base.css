@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #D9D9D9;
     font-weight: 400;
-    color: #ffffff;
+    color: #353535;
     margin: 0 auto;
 }
 
@@ -135,7 +135,7 @@ li.active.link a {
 .next-content {
     display: block;
     background-color: #3C6E71;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 25px auto;
     border-radius: 10px;
     width: 100%;
@@ -193,7 +193,7 @@ li.active.link a {
 .community {
     display: flex;
     background-color: #3C6E71;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 25px auto;
     border-radius: 10px;
     width: 65%;
@@ -203,7 +203,7 @@ li.active.link a {
 
 #weather-card {
     background-color: #3C6E71;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 5px auto;
     border-radius: 5px;
     text-align: center;
@@ -320,7 +320,7 @@ footer img {
 .welcome-message {
     grid-row: 1/2;
     background-color: #3C6E71;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 20px auto;
     width: 80%; 
     border-radius: 5px;
@@ -331,7 +331,7 @@ footer img {
 
 #weather-card1 {
     background-color: #3C6E71;
-    color: #D9D9D9;
+    color: #FFFFFF;
     margin: 5px auto;
     border-radius: 5px;
     text-align: center;
