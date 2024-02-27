@@ -145,3 +145,12 @@
         filter: sepia(80%);
     }   
 }
+
+@media screen and (min-width: 70rem) {
+    .hero-message{
+        position: absolute;
+        top: 45%;
+        width: 60%;
+        font-size: 2.5rem;
+    }
+}
