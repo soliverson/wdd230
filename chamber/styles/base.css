@@ -372,3 +372,7 @@ footer img {
     margin-bottom: 8px;
     border-bottom: 2px solid #D9D9D9;
 }
+
+.pictures img {
+    width: 100%;
+    }
