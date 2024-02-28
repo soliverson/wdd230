@@ -1,0 +1,96 @@
+:root{
+    --border: gray;
+    --BgBtn: #d9acb4;
+    --colorBtn: black; 
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid  var(--border);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+.form fieldset label{
+    display: block;
+    margin-top: 15px;
+}
+
+label.top input{
+    display: block;
+    color: var(--border);;
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#labelConfirmation{
+    color: var(--BgBtn);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#r {
+	width: 300px;
+	margin-bottom: 0;
+}
+#rangevalue {
+	font-size: 2rem;
+	color: var(--BgBtn);
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 10px 0;
+    width: 320px;
+    color: var(--BgBtn);
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+    padding: 0px 2px 1px;
+}
+
+.submit{
+    color: var(--colorBtn);
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--border);
+    background-color: var(--BgBtn);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 1rem;
+    
+}
+
+.submit:hover{
+    background-color: #d86e81;
+}
+
+@media screen and (min-width: 45rem){
+    form{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+}
