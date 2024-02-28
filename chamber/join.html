@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="description" content="Idaho Falls Chamber of Commerce - Join">
+    <meta name="author" content="Stacy Oliverson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Idaho Falls Chamber of Commerce - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soliverson.github.io/wdd230/chamber/images/logo.webp">
+    <meta property="og:url" content="https://soliverson.github.io/wdd230/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Chamber Logo" width="75" height="100">
+        <h1>Idaho Falls Chamber of Commerce</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="mode">
+                🕶️
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li class="active link"><a href="https://soliverson.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/joinus.html">Join Us</a></li>
+           </ul>
+        </nav>
+        
+        <div class="join-main">
+            <div class="form">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label class="top">First Name*<input type="text" name="fname" id="first-name" required></label>
+                        <label class="top">Last Name*<input type="text" name="lname" id="last-name" required></label>
+                        <label class="top">Title/Position <input type="text" name="position" id="tposition" pattern="[A-Za-z0-9\- ]{7,}" title="Please use only alpha characters, hyphens, and spaces with a minimum of seven characters"></label>
+                        <label class="top">Email:*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Mobile Number*<input type="tel" name="mobileNumber" id="mobile" required></label>
+                        <label class="top">Business Name*<input type="text" name="bname" id="bname" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership</legend>
+                        <label class="sbs"><input type="radio" name="membership" id="NP"> Non Profit Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" id="bronze"> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" id="silver"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" id="gold"> Gold Membership</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <label class="top">Please, describe your business
+                            <textarea class="description" name="description" id="description" cols="50" rows="6"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" id="submit" value="Join the Chamber" class="submitButton">
+                </form>
+            </div>
+            <div class="benefits">
+                <div class="table">
+                    <h3>Compare Membership Levels</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7" rowspan="1">Membership Levels</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1"></th>
+                                <th colspan="1" scope="colgroup">Training</th>
+                                <th colspan="1" scope="colgroup">Advertising</th>
+                                <th colspan="1" scope="colgroup">Weekly Network Event</th>
+                                <th colspan="1" scope="colgroup">Monthly Workshops</th>
+                                <th colspan="1" scope="colgroup">Trade Show</th>
+                                <th colspan="1" scope="colgroup">Annual Gala</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">NP Membership*</th>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Bronze Membership</th>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>Once a Month</td> 
+                                <td>❌</td>
+                                <td>Small Boot</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Silver Membership</th>
+                                <td>✔️</td>
+                                <td>✔️</td> 
+                                <td>✔️</td>
+                                <td>❌</td>
+                                <td>Medium Boot</td>
+                                <td>✔️</td> 
+                            </tr>
+                            <tr>
+                                <th scope="row">Gold Membership</th>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td> 
+                                <td>✔️</td>
+                                <td>Large Boot</td>
+                                <td>✔️</td> 
+                            </tr>
+                        </tbody>
+                    </table>  
+                    <p>*Non-Profits Organizations - Please see the documentation needed</p>  
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span></p>
+        <p class="footer-box">Stacy Oliverson | Idaho, USA | <img src="images/flag.webp" alt="USA Flag"></p>
+        <p class="last-update">Last updated: <span id="current-date"></span></p>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>

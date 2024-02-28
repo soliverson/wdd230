@@ -144,6 +144,54 @@
     .pictures img:hover{
         filter: sepia(80%);
     }   
+
+    .join-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    .form{
+        min-width: 50%;
+    }
+    .sbs{
+        padding: .4rem 0;
+    }
+    .top input{
+        padding: .4rem 0;
+    }
+    .top textarea{
+        max-width: 400px;
+    }
+    .benefits{
+        margin:15px 30px 2rem 30px;
+    }
+    .table table{
+        font-size: 1rem;
+        margin: 5px;
+        margin-top: -1rem;
+    }
+    .menu{
+        width: 25%;
+    }
+    .list section{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding: 0.25rem;
+        font-size: 1.5rem;
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .list section img {
+        display:flex;
+        flex-direction: column;
+        margin: 1rem;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+
+
 }
 
 @media screen and (min-width: 70rem) {
