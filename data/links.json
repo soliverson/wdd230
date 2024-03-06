@@ -1,0 +1,108 @@
+{
+    "lessons": [
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url": "lesson02/mediaquery.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]  
+        },
+
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url": "https://soliverson.github.io/wdd230/lesson03/images/csscombinators.jpg",
+                    "title": "Lesson Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Stacy-Oliverson/pen/poYWEeV",
+                    "title": "CSS Pseudo Elements"
+                },
+                {
+                    "url": "https://codepen.io/Stacy-Oliverson/pen/BabwLwZ",
+                    "title": "Responsive Menu 'Hamburger'"
+                }
+            ]  
+        },
+
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url": "https://codepen.io/Stacy-Oliverson/pen/dyrdEmP",
+                    "title": "CSS Pseudo-classes"
+                }
+            ]  
+        },
+
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon - Top 10"
+                }
+            ]  
+        },
+
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url": "https://soliverson.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]  
+        },
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Web Storage API - BOM"
+                }
+            ]  
+        },
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "https://soliverson.github.io/wdd230/lesson08/form-start/index.html",
+                    "title": "HTML Form"
+                }
+            ]  
+        },
+        {
+            "lesson" : "09",
+            "links" : [
+                {
+                    "url": "lesson09/new-ward-members-json",
+                    "title": "JSON - New Ward Members"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]  
+        }       
+    ]
+}
