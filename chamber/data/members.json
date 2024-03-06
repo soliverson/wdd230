@@ -1,0 +1,74 @@
+{
+    "members":[
+    {
+        "name": "Arctic Circle",
+        "adress": "840 S Utah Ave",
+        "phone": "208-522-6611",
+        "website": "https://acburger.com",
+        "image": "images/ArcticCircle.webp",
+        "membership": "Silver",
+        "advertisement": "Get the Good Stuff!"
+
+    },
+    {
+        "name": "Smitty's Pancake & Steak House",
+        "adress": "645 W Broadway St",
+        "phone": "208-523-6450",
+        "website": "https://www.smittys-if.com/",
+        "image": "images/smittys.webp",
+        "membership": "Gold",
+        "advertisement": "Best Pancakes in Idaho Falls!"
+
+    },
+    {
+        "name": "Bowl-Ero Lanes",
+        "adress": "670 1st St #670",
+        "phone": "208-524-9900",
+        "website": "www.bowl-erolanes.com",
+        "image": "images/bowlero.webp",
+        "membership": "Silver",
+        "advertisement": "Best Place for Family Fun!"
+
+    },
+    {
+        "name": "Fybercom",
+        "adress": "140 S Capital Ave",
+        "phone": "208-612-8725",
+        "website": "www.fybercom.net/",
+        "image": "images/fybercom.webp",
+        "membership": "Bronze",
+        "advertisement": "Most Reliable Internet"
+
+    },
+    {
+        "name": "Reed's Dairy",
+        "adress": "2660 W Broadway St",
+        "phone": "208-522-0123",
+        "website": "www.reedsdairy.com/",
+        "image": "images/reedsdairy.webp",
+        "membership": "Silver",
+        "advertisement": "From Our Family's Farm to Your Family's Table!"
+
+    },
+    {
+        "name": "The Gun Shop",
+        "adress": "2680 N Holmes Ave",
+        "phone": "208-529-4092",
+        "website": "www.theifgunshop.com/",
+        "image": "images/gunshop.webp",
+        "membership": "Gold",
+        "advertisement": "Be Beauty, Be Confident!"
+
+    },
+    {
+        "name": "Bill’s Bike and Run",
+        "adress": "930 Pier View Dr",
+        "phone": "208-522-3341",
+        "website": "www.billsbikeandrun.com",
+        "image": "images/billsbike.webp",
+        "membership": "Gold",
+        "advertisement": "Walk, Run, Ride Live!"
+
+    }
+]
+}
