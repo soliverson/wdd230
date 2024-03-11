@@ -203,10 +203,9 @@ li.active.link a {
 #weather-card {
     background-color: #3C6E71;
     color: #FFFFFF;
-    margin: 60px auto;
+    margin: 40px auto;
     border-radius: 5px;
     text-align: center;
-    text-overflow: wrap;
     font-size: 1.5rem;
     width: 80%;
 }
@@ -677,7 +676,6 @@ thead > :nth-child(2) > :not(th:first-child){
     height: auto;
     margin: auto;
     color: #FFFFFF;
-    font-weight: 300px;
     padding: 10px;
     line-height: 2;
     font-size: .8rem;
@@ -685,7 +683,6 @@ thead > :nth-child(2) > :not(th:first-child){
 .banner div a{
     text-decoration: none;
     color: #FFFFFF;
-    font-weight: 100px;
     padding: 10px;
     font-size: 1rem;
 }
