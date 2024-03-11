@@ -62,7 +62,13 @@
         <section class="card">
             <h3 class="background-color">Information</h3>
             <div class="info">Idaho Falls, Idaho </div>
-            <div class="weather">☁️ 36°F </div>
+            <div class="weather">
+                <figure>
+                    <img id="weather-icon" src="#" alt="#">
+                </figure>
+                <p id="current-temp"></p>
+                <p id="description"></p>
+            </div>
             <div class="pagevisits">Page Visits:<span class="visits"></span></div>
     
             <div class="map-container">
@@ -84,6 +90,8 @@
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/links.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 </body>
 
 </html>
