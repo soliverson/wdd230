@@ -41,6 +41,8 @@
                 <li><a href="https://soliverson.github.io/wdd230/chamber/join.html">Join Us</a></li>
            </ul>
         </nav>
+        <div class="banner">       
+        </div>
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/if-small.webp" >
@@ -68,11 +70,19 @@
         <div class="top-cards">
             <div class="small-cards">
                 <section id="weather-card">
-                    <h3 class="background-color">Weather</h3>
-                    <div class="info">Idaho Falls, Idaho </div>
-                        <p>Temperature: ☁️ 35°F</p>
-                        <p>Wind Speed: 5 mph</p>
-                        <p id="windChillResult"></p>
+                    <h2>Weather</h2>
+                    <div class="weather">
+                        <figure>
+                            <img id="weather-icon" src="#" alt="#">
+                        </figure>
+                        <p id="current-temp"></p>
+                        <p id="description"></p>
+                    </div> 
+                    <div class="forecast">
+                        <div id="day1"></div>
+                        <div id="day2"></div>
+                        <div id="day3"></div >
+                    </div>                    
                 </section>
             </div>
         </div>
@@ -142,6 +152,8 @@
     <script src="scripts/chamber.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>
