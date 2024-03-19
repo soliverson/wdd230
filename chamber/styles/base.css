@@ -130,58 +130,57 @@ li.active.link a {
     text-align: right;
     padding: 10px;
 }
-
-
-/* Top cards styles */
-.top-cards {
+.top-cards{
     display: block;
 }
-
-.small-cards, .main-directory > .title {
+.small-cards, .main-directory > .title{
     display: block;
     align-items: center;
     justify-items: center;
-    margin: 10px;
-    text-align: center;
-    border-bottom: 2px solid #3C6E71;
+    margin: 20px;   
+    text-align: center; 
+    border-bottom: 3px solid #3C6E71;  
 }
-
-.small-cards h2 {
-    box-shadow: 1px 1px 5px #D9D9D9;
+.small-cards h2{
+    box-shadow: 1px 1px 5px #FFFFFF;
+    
 }
-
-.small-cards p {
+.small-cards p{
     padding: 10px;
 }
-
-
-#weather-card, next-event-card {
+.small-cards img{
+    margin: 10px;
+}
+#weather-card, #next-event-card {
     background-color: #3C6E71;
     color: #FFFFFF;
     margin: 20px auto;
     border-radius: 5px;
     text-align: center;
     font-size: 1.5rem;
-    width: 80%;
+    width: 75%; 
     padding-bottom: .1rem;
 }
 
 .weather{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     text-transform: capitalize;
-    margin: 50px;
+    background-color: #FFFFFF;
+    color: #353535;
+    margin: 10px;
 }
 .forecast{
     display: block;
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     background-color: #FFFFFF;
     color: #284B63;
-    margin: 5px
+    margin: 10px
 }
-
 #day1, #day2, #day3{
     display: block;
 }
@@ -194,17 +193,17 @@ li.active.link a {
 #day1 h3, #day2 h3, #day3 h3{
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
-/* Next content styles */
 .next-content{
     display: block;
     align-items: center;
     justify-content:space-evenly;
-    background-color:#3C6E71;
 }
-
+.next-content a{
+    color: #FFFFFF;
+}
 .next-content img{
     width: 80%;
     height: auto;
@@ -217,73 +216,76 @@ li.active.link a {
     margin: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color:#FFFFFF;
 }
-
-/* Business cards styles */
-.business-cards {
+.business-cards{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 1.5rem;
     font-size: 2rem;
+    color:#FFFFFF;
+    background-color:#3C6E71;
+    border-radius: 5px;
 }
 
-/* Slide card styles */
 .slide-card img{
     width: 80%;
-    height: auto;
-    border-radius: 3px;
-    margin-top: .5rem;
-    background-color: #3C6E71;
-
+    height: auto; 
+    border-radius: 5px;
+    margin-top: .5rem; 
 }
-.slide-card> .text {
+.slide-card>.text{
     font-size: 1.5rem;
-    padding-bottom: .5rem
+    padding-bottom: .5rem;
 }
 
-/* Main cards styles */
-.main-cards {
+#darkBtn{
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+    width: 24px;
+    cursor: pointer;
+}
+
+footer{
+    display: block;
+    background-color: #3C6E71;
+    color: #effdff;
+    padding: 20px;
+    text-align: center;
+}
+.main-cards{
     display: block;
     padding-top: 1.5rem;
     border-top: 3px solid #D9D9D9;
-    margin: 1.5rem;
+    margin:1.5rem;
 }
-
-.main-cards h2 {
+.main-cards h2{
     padding: 5px;
     margin-left: 1rem;
 }
 
-/* Community and events cards styles */
-.community-cards,
-.events-cards {
-    display: block;   
+.community-cards, .events-cards{
+    display:block;   
 }
-
-.community-card,
-.event-card {
+.community-card, .event-card{
     margin: 10px;
     box-shadow: 1px 1px 5px #FFFFFF;
-    background-color: #284B63;
-    color: #FFFFFF;  
+    background-color:#284B63;
+    color: #FFFFFF
 }
-
-.event-card {
+.event-card{
     background-color: #3C6E71;
     color: #FFFFFF;
-}
 
-.community-card img,
-.event-card img {
+}
+.community-card img, .event-card img{
     width: 100%;
 }
-
-.community-card h4,
-.event-card h4 {
+.community-card h4, .event-card h4{
     text-align: center;
     padding: 5px;
 }
+
 
 /* Sidebar and pictures styles */
 .sidebar,
