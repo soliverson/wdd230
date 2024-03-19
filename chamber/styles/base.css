@@ -219,7 +219,7 @@ li.active.link a {
 }
 .business-cards{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 1.5rem;
     font-size: 2rem;
     color:#FFFFFF;
@@ -231,7 +231,7 @@ li.active.link a {
     width: 80%;
     height: auto; 
     border-radius: 5px;
-    margin-top: .5rem; 
+    margin-top: 5rem; 
 }
 .slide-card>.text{
     font-size: 1.5rem;
