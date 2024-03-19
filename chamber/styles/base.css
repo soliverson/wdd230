@@ -131,49 +131,19 @@ li.active.link a {
     padding: 10px;
 }
 
-/* Next content styles */
-.next-content {
-    display: block;
-    background-color: #3C6E71;
-    color: #FFFFFF;
-    margin: 25px auto;
-    border-radius: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.next-content img {
-    width: 10%;
-    height: auto;
-    border-radius: 3px;
-}
-
-.next-event h2 {
-    padding: 5px;
-    margin-left: 2.5rem;
-}
-
-.next-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px; 
-    text-align: center;
-    font-size: 1.5rem;
-}
 
 /* Top cards styles */
 .top-cards {
     display: block;
 }
 
-.small-cards, .main-directory {
+.small-cards, .main-directory > .title {
     display: block;
     align-items: center;
     justify-items: center;
     margin: 10px;
     text-align: center;
+    border-bottom: 2px solid #3C6E71;
 }
 
 .small-cards h2 {
@@ -184,30 +154,16 @@ li.active.link a {
     padding: 10px;
 }
 
-.small-cards img {
-    margin: 10px;
-}
 
-/* Community styles */
-.community {
-    display: flex;
+#weather-card, next-event-card {
     background-color: #3C6E71;
     color: #FFFFFF;
-    margin: 25px auto;
-    border-radius: 10px;
-    width: 65%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#weather-card {
-    background-color: #3C6E71;
-    color: #FFFFFF;
-    margin: 40px auto;
+    margin: 20px auto;
     border-radius: 5px;
     text-align: center;
     font-size: 1.5rem;
     width: 80%;
+    padding-bottom: .1rem;
 }
 
 .weather{
@@ -241,24 +197,48 @@ li.active.link a {
     padding-top: 5px;
 }
 
+/* Next content styles */
+.next-content{
+    display: block;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color:#3C6E71;
+}
+.next-content a{
+    color: #D9D9D9;
+}
+.next-content img{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+.next-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 /* Business cards styles */
 .business-cards {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 1.5rem;
-}
-
-.business-cards img {
-    width: 65%;
-    border-radius: 5px;
-    margin-top: -230px;
-    margin-left: 50px;
+    font-size: 2rem;
 }
 
 /* Slide card styles */
-.slide-card {
-    position: relative;
-    text-align: center;
+.slide-card img{
+    width: 80%;
+    height: auto;
+    border-radius: 3px;
+    margin-top: .5rem;
+}
+.slide-card> .text {
+    font-size: 1.5rem;
+    padding-bottom: .5rem
 }
 
 /* Main cards styles */

@@ -1,15 +1,41 @@
-var slideIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slide-card");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {
-        slideIndex = 1
-    }
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 5000); // Change image every 5 seconds
+// business spotlight slideshow code
+
+let advertising = true;
+const adsUrl = 'data/members.json';
+const adsContainer = document.querySelector(".slide-card");
+const advertisement = document.createElement('h3');
+advertisement.classList.add('text');
+const slideImg = document.createElement('img');
+slideImg.classList.add('slide-img');
+
+let members = [];
+
+async function getAdvertisementData(url){
+    const response = await fetch(url);
+    const data = await response.json();
+    members = await data.members;
+    displayAdds(members);
+    
 }
+
+
+function displayAdds(members){
+    
+        let index = Math.floor(Math.random() * (members.length-1));
+        
+        if (members[index].membership == 'Silver' || members[index].membership == 'Gold'){
+            slideImg.setAttribute('src', members[index].image);
+            slideImg.setAttribute('alt', members[index].name);
+            advertisement.textContent = members[index].advertisement;
+            adsContainer.appendChild(slideImg);
+            adsContainer.appendChild(advertisement);            
+        }
+
+    setTimeout(function(){displayAdds(members)}, 3000);
+} 
+
+getAdvertisementData(adsUrl);
+
+
+
+    

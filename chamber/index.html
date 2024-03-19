@@ -41,6 +41,8 @@
                 <li><a href="https://soliverson.github.io/wdd230/chamber/join.html">Join Us</a></li>
            </ul>
         </nav>
+        <div class="banner">
+        </div>
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="images/if-small.webp" >
@@ -50,25 +52,13 @@
             
             <div class="hero-message">
                 <h2 id="message">Join the Chamber</h2>
-                <button id="hero-button">Click Here</button>  
+                <button id="hero-button" type="button" name="hero-button" onclick="window.location.href = 'join.html'"><b>Click Here</b></button>  
             </div>
         </div>
-        <div class="next-event">        
-            <h2>UPCOMING EVENTS</h2>
-                <section class="next-content">
-                    <div>
-                        <img src="images/people.webp" alt="couple romantic" width="160">    
-                    </div>
-                    <div class="next-text">
-                        <h3>Valentine's Day</h3>
-                        <p>This Valentine's Day show your spouse or loved one love by supporting our local restaunts.<a href="">more info...</a></p>    
-                    </div>
-                </section>
-            </div>
-        <div class="top-cards">
-            <div class="small-cards">
+        <div class="top-cards">        
+            <section class="small-cards">
                 <section id="weather-card">
-                    <h2>Weather</h2>
+                    <h2>Idaho Falls Weather</h2>
                     <div class="weather">
                         <figure>
                             <img id="weather-icon" src="#" alt="#">
@@ -82,27 +72,25 @@
                         <div id="day3"></div >
                     </div>                    
                 </section>
+                <section id="next-event-card">
+                    <h2>Upcoming Events</h2>
+                    <section class="next-content">
+                        <div>
+                            <img src="images/people.webp" alt="couple in love" width="160">
+                        </div>
+                        <div class="next-text">
+                            <h3>Valentine's Day</h3>
+                            <p>Take your sweetheart out to eat by taking her out to eat and supporting our businesses here in Idaho Falls!</p>
+                        </div>
+                    </section>
+                </section>
             </div>
         </div>
-        <section class="business-cards">
+        <div class="business-cards">
             <div class="slide-card">
-                <h3 class="text">Advertisements</h3>
-                <img class="slide-imgs" src="images/reedsdairy.webp" alt="Reeds Dairy image">
             </div>
-            <div class="slide-card">
-                <h3 class="text">Advertisements</h3>
-                <img class="slide-imgs" src="images/fybercom.webp" alt="Fybercom image">
-            </div>
-            <div class="slide-card">
-                <h3 class="text">Advertisements</h3>
-                <img class="slide-imgs" src="images/bowlero.webp" alt="Bowlero image">
-            </div>
-            <div class="slide-card">
-                <h3 class="text">Advertisements</h3>
-                <img class="slide-imgs" src="images/ArcticCircle.webp" alt="Arctic Circle image">
-            </div>   
-        </section>
-    <div class="main-cards">
+        </div>
+        <div class="main-cards">
         <h2>COMMUNITY</h2>
         <section class="community-cards">
             <div class="community-card">

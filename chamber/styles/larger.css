@@ -47,8 +47,7 @@
     .top-cards {
         display: grid;
         grid-template-columns: 2fr 3fr;
-        column-gap: 5px;
-        margin-left: 100px;
+        column-gap: 10px;
     }
 
     .small-cards {
@@ -56,30 +55,21 @@
     }
 
     .business-cards {
-        margin-top: -200px;
-        margin-left: 350px;
+        margin-top: 40px;
+        margin-left: 6rem;
     }
-
-    .next-content {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        background-color: #3C6E71;
-        color: #FFFFFF;
-        margin: 15px auto;
-        border-radius: 5px;
-        width: 90%;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .next-event img {
-        width: 100%;
+    
+    .slide-card img{
+        width: 80%;
         height: auto;
+        border-radius: 3px;
+        margin-top: 3rem;
     }
 
-    .weather {
-        width: 70%;
+    .slide-card>.text{
+        font-size: 2rem;
     }
+
 
     .community-cards,
     .events-cards {
