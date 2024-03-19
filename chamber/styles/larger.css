@@ -59,11 +59,23 @@
         margin-left: 6rem;
     }
     
+    .slide-card-container {
+        position: absolute;
+        top: 55rem;
+        right: -90px;
+        width: 60%; 
+    }
+
+    .slide-card {
+        width: 100%; 
+        height: auto;
+        border-radius: 3px;
+    }
+}
     .slide-card img{
         width: 80%;
         height: auto;
         border-radius: 3px;
-        margin-top: 3rem;
     }
 
     .slide-card>.text{
@@ -191,7 +203,7 @@
         width: 50%;
         border-radius: 10px;
     }
-}
+
 
 @media screen and (min-width: 70rem) {
     .hero-message {
