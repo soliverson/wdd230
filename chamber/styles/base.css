@@ -170,8 +170,9 @@ li.active.link a {
     justify-content: center;
     text-transform: capitalize;
     background-color: #D9D9D9;
+    border-radius: 8px;
     color: #353535;
-    margin: 10px;
+    margin: 15px;
 }
 .forecast{
     display: block;
@@ -179,7 +180,8 @@ li.active.link a {
     font-size: 1rem;
     background-color: #D9D9D9;
     color: #353535;
-    margin: 10px
+    border-radius: 8px;
+    margin: 13px
 }
 #day1, #day2, #day3{
     display: block;
