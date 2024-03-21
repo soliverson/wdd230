@@ -155,7 +155,7 @@ li.active.link a {
     background-color: #3C6E71;
     color: #FFFFFF;
     margin: 20px auto;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     font-size: 1.5rem;
     width: 75%; 
@@ -228,11 +228,11 @@ li.active.link a {
 }
 
 .slide-card img{
-    width: 100%;
+    width: 90%;
     height: auto; 
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 5rem; 
-    box-shadow: 1px 1px 5px #FFFFFF;
+    box-shadow: 2px 2px 8px #FFFFFF;
 
 }
 .slide-card>.text{
@@ -341,7 +341,7 @@ footer img {
     color: #FFFFFF;
     margin: 20px auto;
     width: 80%; 
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px;    
@@ -351,7 +351,7 @@ footer img {
     background-color: #3C6E71;
     color: #FFFFFF;
     margin: 10px auto;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -376,7 +376,7 @@ footer img {
     width: 90%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .population,
@@ -414,7 +414,7 @@ footer img {
 form fieldset{
     margin: 2rem 0;
     border: 1px solid #3C6E71;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: .5rem 2%;
 }
 
@@ -433,7 +433,7 @@ form legend{
 }
 label.top input{
     border: 1px solid #3C6E71;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: .75rem;
 }
 form label.top input:required{
@@ -456,7 +456,7 @@ form label.top input:focus{
 .description{
     display: block;
     border: 1px solid #3C6E71;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 5px;
     max-width: 20rem;
 }
@@ -467,7 +467,7 @@ form label.top input:focus{
 form input.submitButton{
     background-color: #284B63;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
@@ -550,7 +550,7 @@ thead > :nth-child(2) > :not(th:first-child){
     text-align: center;
     background-color: #3C6E71;
     border: 1px solid #3C6E71;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 1px 1px 15px #284B63;
 }
 .directory-cards div{

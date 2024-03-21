@@ -47,7 +47,7 @@
     .top-cards {
         display: grid;
         grid-template-columns: 2fr 3fr;
-        column-gap: 10px;
+        column-gap: 4px;
     }
 
     .small-cards {
@@ -56,16 +56,9 @@
 
     .business-cards {
         margin-top: 40px;
-        margin-left: 6rem;
+        margin-left: -3rem;
     }
     
-    .slide-card-container {
-        position: absolute;
-        top: 55rem;
-        right: -90px;
-        width: 60%; 
-    }
-
     .slide-card {
         width: 100%; 
         height: auto;
