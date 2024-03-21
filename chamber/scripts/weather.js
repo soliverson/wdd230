@@ -90,8 +90,8 @@ function displayForecastResults(forecastData){
     const forecastMaxTemp = document.createElement('p');
     const forecastMinTemp = document.createElement('p');
     firstForecastDay.textContent = date1;
-    forecastMaxTemp.innerHTML = `Max: ${maxTemp1}&deg;F`;
-    forecastMinTemp.innerHTML = `Min: ${minTemp1}&deg;F`;
+    forecastMaxTemp.innerHTML = `High: ${maxTemp1}&deg;F`;
+    forecastMinTemp.innerHTML = `Low: ${minTemp1}&deg;F`;
     day1.appendChild(firstForecastDay);
     day1.appendChild(forecastMaxTemp);
     day1.appendChild(forecastMinTemp);
@@ -113,8 +113,8 @@ function displayForecastResults(forecastData){
     const forecastMaxTemp2 = document.createElement('p');
     const forecastMinTemp2 = document.createElement('p');
     secondForecastDay.textContent = date2;
-    forecastMaxTemp2.innerHTML = `Max: ${maxTemp2}&deg;F`;
-    forecastMinTemp2.innerHTML = `Min: ${minTemp2}&deg;F`;
+    forecastMaxTemp2.innerHTML = `High: ${maxTemp2}&deg;F`;
+    forecastMinTemp2.innerHTML = `Low: ${minTemp2}&deg;F`;
     day2.appendChild(secondForecastDay);
     day2.appendChild(forecastMaxTemp2);
     day2.appendChild(forecastMinTemp2);
@@ -136,8 +136,8 @@ function displayForecastResults(forecastData){
     const forecastMaxTemp3 = document.createElement('p');
     const forecastMinTemp3 = document.createElement('p');
     thirdForecastDay.textContent = date3;
-    forecastMaxTemp3.innerHTML = `Max: ${maxTemp3}&deg;F`;
-    forecastMinTemp3.innerHTML = `Min: ${minTemp3}&deg;F`;
+    forecastMaxTemp3.innerHTML = `High: ${maxTemp3}&deg;F`;
+    forecastMinTemp3.innerHTML = `Low: ${minTemp3}&deg;F`;
     day3.appendChild(thirdForecastDay);
     day3.appendChild(forecastMaxTemp3);
     day3.appendChild(forecastMinTemp3);
