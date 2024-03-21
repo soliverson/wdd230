@@ -275,19 +275,26 @@ footer{
     margin: 10px;
     box-shadow: 1px 1px 5px #FFFFFF;
     background-color:#284B63;
-    color: #FFFFFF
+    color: #FFFFFF;
+    border-radius: 8px;
+
 }
 .event-card{
     background-color: #3C6E71;
     color: #FFFFFF;
-
 }
+
 .community-card img, .event-card img{
     width: 100%;
+    border-radius: 8px;
+    margin:auto;
 }
 .community-card h4, .event-card h4{
     text-align: center;
-    padding: 8px;
+    padding: 5px;
+}
+.community-card p, .event-card p{
+    margin: 15px;
 }
 
 
