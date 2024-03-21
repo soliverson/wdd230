@@ -140,8 +140,8 @@ li.active.link a {
     text-align: center; 
     border-bottom: 3px solid #3C6E71;  
 }
-.small-cards h2{
-    box-shadow: 1px 1px 5px #FFFFFF;
+.small-cards h2, .business-cards h2{
+    box-shadow: .5px 3px 3px #FFFFFF;
     
 }
 .small-cards p{
@@ -159,6 +159,7 @@ li.active.link a {
     font-size: 1.5rem;
     width: 75%; 
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .weather{
@@ -226,6 +227,7 @@ li.active.link a {
     color:#FFFFFF;
     background-color:#3C6E71;
     border-radius: 5px;
+    padding-top: 1rem;
 }
 
 .slide-card img{
