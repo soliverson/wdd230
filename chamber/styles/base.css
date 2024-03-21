@@ -159,7 +159,7 @@ li.active.link a {
     text-align: center;
     font-size: 1.5rem;
     width: 75%; 
-    padding-bottom: .1rem;
+    padding-bottom: 1rem;
 }
 
 .weather{
@@ -287,7 +287,7 @@ footer{
 }
 .community-card h4, .event-card h4{
     text-align: center;
-    padding: 5px;
+    padding: 8px;
 }
 
 
