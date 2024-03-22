@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="description" content="Idaho Falls Chamber of Commerce - Thank You">
+    <meta name="author" content="Stacy Oliverson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Idaho Falls Chamber of Commerce - Thank You">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://soliverson.github.io/wdd230/chamber/images/logo.webp">
+    <meta property="og:url" content="https://soliverson.github.io/wdd230/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Chamber Logo" width="75" height="100">
+        <h1>Idaho Falls Chamber of Commerce</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="mode">
+                🕶️
+            </div>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li class="active link"><a href="https://soliverson.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                <li><a href="https://soliverson.github.io/wdd230/chamber/join.html">Join Us</a></li>
+           </ul>
+        </nav>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/if-town-small.webp" media="(max-width: 600px)">
+                <source srcset="images/if-town-large.webp" media="(max-width: 2000px)">
+                <img id="hero-image" src="images/if-town-small.webp" alt="Idaho Falls Water Tower" loading="lazy" width="683" height="228">
+            </picture>      
+            <div class="hero-message">
+                <h2 id="message">Thank You for Joining the Chamber!</h2>  
+            </div>
+        </div>
+
+
+
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span></p>
+        <p class="footer-box">Stacy Oliverson | Idaho, USA | <img src="images/flag.webp" alt="USA Flag"></p>
+        <p class="last-update">Last updated: <span id="current-date"></span></p>
+    </footer>
+    
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>

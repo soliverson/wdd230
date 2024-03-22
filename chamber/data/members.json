@@ -2,7 +2,7 @@
     "members":[
     {
         "name": "Arctic Circle",
-        "adress": "840 S Utah Ave",
+        "address": "840 S Utah Ave",
         "phone": "208-522-6611",
         "website": "https://acburger.com",
         "image": "images/ArcticCircle.webp",
@@ -12,7 +12,7 @@
     },
     {
         "name": "Smitty's Pancake & Steak House",
-        "adress": "645 W Broadway St",
+        "address": "645 W Broadway St",
         "phone": "208-523-6450",
         "website": "https://www.smittys-if.com/",
         "image": "images/smittys.webp",
@@ -22,7 +22,7 @@
     },
     {
         "name": "Bowl-Ero Lanes",
-        "adress": "670 1st St #670",
+        "address": "670 1st St #670",
         "phone": "208-524-9900",
         "website": "www.bowl-erolanes.com",
         "image": "images/bowlero.webp",
@@ -32,7 +32,7 @@
     },
     {
         "name": "Fybercom",
-        "adress": "140 S Capital Ave",
+        "address": "140 S Capital Ave",
         "phone": "208-612-8725",
         "website": "www.fybercom.net/",
         "image": "images/fybercom.webp",
@@ -42,7 +42,7 @@
     },
     {
         "name": "Reed's Dairy",
-        "adress": "2660 W Broadway St",
+        "address": "2660 W Broadway St",
         "phone": "208-522-0123",
         "website": "www.reedsdairy.com/",
         "image": "images/reedsdairy.webp",
@@ -52,7 +52,7 @@
     },
     {
         "name": "The Gun Shop",
-        "adress": "2680 N Holmes Ave",
+        "address": "2680 N Holmes Ave",
         "phone": "208-529-4092",
         "website": "www.theifgunshop.com/",
         "image": "images/gunshop.webp",
@@ -62,7 +62,7 @@
     },
     {
         "name": "Bill’s Bike and Run",
-        "adress": "930 Pier View Dr",
+        "address": "930 Pier View Dr",
         "phone": "208-522-3341",
         "website": "www.billsbikeandrun.com",
         "image": "images/billsbike.webp",
