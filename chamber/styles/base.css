@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Mode styles */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #FFFFFF
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #D9D9D9;
@@ -13,12 +22,10 @@ body {
     margin: 0 auto;
 }
 
-/* Heading styles */
 h1, h2, h3, h4 {
     font-family: "Playfair Display", serif;
 }
 
-/* Header styles */
 header {
     display: flex;
     background-color: #3C6E71;
@@ -39,7 +46,6 @@ header img {
     margin: 0 10px;    
 }
 
-/* Navigation styles */
 nav {
     font-family: 'Playfair Display', serif;
     background-color: #284B63;
@@ -104,7 +110,6 @@ li.active.link a {
     font-weight: 700;
 }
 
-/* Hero styles */
 .hero {
     position: relative;
 }
@@ -251,13 +256,6 @@ li.active.link a {
     cursor: pointer;
 }
 
-footer{
-    display: block;
-    background-color: #3C6E71;
-    color: #effdff;
-    padding: 20px;
-    text-align: center;
-}
 .main-cards{
     display: block;
     padding-top: 1.5rem;
@@ -299,52 +297,11 @@ footer{
 }
 
 
-/* Sidebar and pictures styles */
-.sidebar,
-.pictures {
+.sidebar, .pictures {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.pictures {
-    margin-right: 30px;
-    margin-top: 6px;
-}
-
-.pictures img {
-    width: 50%;
-    height: auto;
-    margin: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-}
-
-/* Footer styles */
-footer {
-    display: block;
-    background-color: #3C6E71;
-    color: #FFFFFF;
-    padding: 20px;
-    text-align: center; 
-}
-
-footer img {
-    max-height: 13px;
-    margin: 0 .5rem;
-}
-
-/* Mode styles */
-#mode {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #FFFFFF
-}
-
-/* Discover page styles */
 .welcome-message {
     grid-row: 1/2;
     background-color: #3C6E71;
@@ -355,24 +312,6 @@ footer img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px;    
-}
-
-#weather-card1 {
-    background-color: #3C6E71;
-    color: #FFFFFF;
-    margin: 10px auto;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 77%;
-}
-.weather{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: capitalize;
-    margin: 40px;
 }
 
 .demographics {
@@ -389,12 +328,7 @@ footer img {
     border-radius: 8px;
 }
 
-.population,
-.employment,
-.mayor,
-.households,
-.personshousehold,
-.education {
+.population, .employment, .mayor, .households, .personshousehold, .education {
     margin: .2rem;
     padding: 2rem;
     font-size: 1.8rem;
@@ -408,9 +342,44 @@ footer img {
     border-bottom: 2px solid #D9D9D9;
 }
 
+.pictures {
+    margin-right: 30px;
+    margin-top: 6px;
+}
+
 .pictures img {
     width: 100%;
-    }
+    height: auto;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+    display: block;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center; 
+}
+
+footer img {
+    max-height: 13px;
+    margin: 0 .5rem;
+}
+
+#weather-card1 {
+    background-color: #3C6E71;
+    color: #FFFFFF;
+    margin: 10px auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 77%;
+}
+
 
 /* ---------------JOIN - FORM------------------*/
 
@@ -424,7 +393,7 @@ footer img {
 form fieldset{
     margin: 2rem 0;
     border: 1px solid #3C6E71;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: .5rem 2%;
 }
 
