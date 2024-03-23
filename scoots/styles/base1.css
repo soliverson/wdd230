@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-    margin-left: 140px;
+    margin-left: 30px;
 }
 
 header img {
@@ -144,11 +144,12 @@ footer {
     display: block;
     background-color: #F95738;
     color: #0D3B66;
-    padding: 20px;
+    padding: 5px;
     text-align: center; 
 }
 
 footer img {
-    max-height: 13px;
+    max-height: 20px;
     margin: 0 .5rem;
 }
+
