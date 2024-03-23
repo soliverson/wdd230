@@ -1,152 +1,116 @@
-//get the elements from the information card that is related to the weather
+// Variables for API OpenWeatherMap
+const APIKey = "4f403cd0a70e67dbfb9292cb3f7b0933";
+const lat = 20.507881161150983;
+const long = -86.94621875768073;
+const cnt = 32;
+ 
+// Variables for Weather API
+const cityName = document.querySelector(".city");
+const countryName = document.querySelector(".country");
 const currentTemp = document.querySelector("#current-temp");
+const currentFeel = document.querySelector("#current-feel");
+const currentPress = document.querySelector("#current-press");
 const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("#description");
-const day1 = document.querySelector("#day1");
-const day2 = document.querySelector("#day2");
-const day3 = document.querySelector("#day3");
+const captionDesc = document.querySelector("#weather-desc");
+const humidity = document.querySelector("#weather-hr")
 
+// Variables for Forecast API
+const forecastTemp = document.querySelector("#forecast-temp");
+const forecastIcon = document.querySelector("#forecast-icon");
+const forecastDesc = document.querySelector("#forecast-desc");
+const forecastDate = document.querySelector(".day")
 
-// define the api url using my city's data
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=43.49167819115109&lon=-112.04504114166237&units=imperial&appid=4f403cd0a70e67dbfb9292cb3f7b0933";
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=43.49167819115109&lon=-112.04504114166237&units=imperial&appid=4f403cd0a70e67dbfb9292cb3f7b0933";
+const forecastTemp1 = document.querySelector("#forecast-temp1");
+const forecastIcon1 = document.querySelector("#forecast-icon1");
+const forecastDesc1 = document.querySelector("#forecast-desc1");
+const forecastDate1 = document.querySelector(".day1")
 
+const forecastTemp2 = document.querySelector("#forecast-temp2");
+const forecastIcon2 = document.querySelector("#forecast-icon2");
+const forecastDesc2 = document.querySelector("#forecast-desc2");
+const forecastDate2 = document.querySelector(".day2")
 
-async function apiFetch(){
-    try{
+// WEATHER API CALL
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${APIKey}&units=metric`;
+
+async function weatherAPIFetch() {
+    try {
         const response = await fetch(url);
-        if (response.ok){
+        if (response.ok) {
             const data = await response.json();
-            //console.log(data);
             displayResults(data);
-        } else{
+        } else {
             throw Error(await response.text());
         }
-    } catch (error){
-       // console.log(error);
+    } catch (error) {
+        console.log(error);
     }
 }
-function displayResults(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+
+// FORECAST API CALL
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${APIKey}&units=metric&cnt=${cnt}`;
+
+async function forecastAPIFetch() {
+    try {
+        const response = await fetch(forecastURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayForecastResults(data);
+            
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+// Functions
+function displayResults(data) {
+    cityName.textContent = `${data.name}`;
+    countryName.textContent = `${data.sys.country}`;
+    currentTemp.innerHTML = `Temp ${data.main.temp.toFixed(1)}&deg;C`;
+    currentFeel.innerHTML = `Feel ${data.main.feels_like.toFixed(1)}&deg;C`;
+    currentPress.textContent = `Press ${data.main.pressure}hPa`;
+    humidity.textContent = `Hr ${data.main.humidity}%`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = ` ${data.weather[0].description}` ;
+    let desc = data.weather[0].description;
     weatherIcon.setAttribute("src", iconsrc);
-    weatherIcon.setAttribute("alt", data.weather[0].main );
+    weatherIcon.setAttribute("alt", "weather icon");
     captionDesc.textContent = `${desc}`;
 }
 
-async function forecastFetch(){
-    try{
-        const forecastResponse = await fetch(forecastUrl);
-        if (forecastResponse.ok){
-            const forecastData = await forecastResponse.json();
-            displayForecastResults(forecastData);
-        } else{
-            throw Error(await forecastResponse.text());
-        }
-    } catch (error){
-       // console.log(error);
-    }
-}
-function displayForecastResults(forecastData){
-    let currentDate = new Date().toLocaleDateString();
-    let firstIndex = 0;
-    let secondIndex = 0;
-    let thirdIndex = 0;
-    let date1;
-    let date2;
-    let date3;
-    let maxTemp1 = -200;
-    let minTemp1 = 200;
-    let maxTemp2 = -200;
-    let minTemp2 = 200;
-    let maxTemp3 = -200;
-    let minTemp3 = 200;
+function displayForecastResults(data) {
 
-    //get next days first indexes
-    for (let i = 0; i<forecastData.list.length; i++){
-        let date = new Date(forecastData.list[i].dt_txt).toLocaleDateString();
-        if (currentDate != date){
-            firstIndex = i;
-            secondIndex = firstIndex + 8;
-            thirdIndex = secondIndex + 8
-            break;
-        }
-    };
-    // first forecast day code
-    for (j = firstIndex; j<secondIndex; j++){
-        let date = new Date(forecastData.list[j].dt_txt).toLocaleDateString();
-        let maxTemp = forecastData.list[j].main.temp_max;
-        let minTemp = forecastData.list[j].main.temp_min;
-        if(maxTemp > maxTemp1){
-            maxTemp1 = maxTemp;
-        }
-        if (minTemp < minTemp1){
-            minTemp1 = minTemp
-        }
-        date1 = date;
-    };
-    const firstForecastDay = document.createElement('h3');
-    const forecastMaxTemp = document.createElement('p');
-    const forecastMinTemp = document.createElement('p');
-    firstForecastDay.textContent = date1;
-    forecastMaxTemp.innerHTML = `High: ${maxTemp1}&deg;F`;
-    forecastMinTemp.innerHTML = `Low: ${minTemp1}&deg;F`;
-    day1.appendChild(firstForecastDay);
-    day1.appendChild(forecastMaxTemp);
-    day1.appendChild(forecastMinTemp);
+    forecastTemp.innerHTML = `${data.list[4].main.temp.toFixed(1)}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[4].weather[0].icon}.png`;
+    let desc = data.list[4].weather[0].description;
+    forecastIcon.setAttribute("src", iconsrc);
+    forecastIcon.setAttribute("alt", "weather icon");
+    forecastDesc.textContent = `${desc}`;
+    forecastDate.textContent = getWeekDay(data.list[4].dt);
 
-    // second forecast day code
-    for (k = secondIndex; k<thirdIndex; k++){
-        let date = new Date(forecastData.list[k].dt_txt).toLocaleDateString();
-        let maxTemp = forecastData.list[k].main.temp_max;
-        let minTemp = forecastData.list[k].main.temp_min;
-        if(maxTemp > maxTemp2){
-            maxTemp2 = maxTemp;
-        }
-        if (minTemp < minTemp2){
-            minTemp2 = minTemp
-        }
-        date2 = date;
-    };
-    const secondForecastDay = document.createElement('h3');
-    const forecastMaxTemp2 = document.createElement('p');
-    const forecastMinTemp2 = document.createElement('p');
-    secondForecastDay.textContent = date2;
-    forecastMaxTemp2.innerHTML = `High: ${maxTemp2}&deg;F`;
-    forecastMinTemp2.innerHTML = `Low: ${minTemp2}&deg;F`;
-    day2.appendChild(secondForecastDay);
-    day2.appendChild(forecastMaxTemp2);
-    day2.appendChild(forecastMinTemp2);
+    forecastTemp1.innerHTML = `${data.list[12].main.temp.toFixed(1)}&deg;C`;
+    const iconsrc1 = `https://openweathermap.org/img/w/${data.list[12].weather[0].icon}.png`;
+    let desc1 = data.list[12].weather[0].description;
+    forecastIcon1.setAttribute("src", iconsrc1);
+    forecastIcon1.setAttribute("alt", "weather icon");
+    forecastDesc1.textContent = `${desc1}`;
+    forecastDate1.textContent = getWeekDay(data.list[12].dt);
 
-    // third forecast day code
-    for (l = thirdIndex; l<thirdIndex +7; l++){
-    let date = new Date(forecastData.list[l].dt_txt).toLocaleDateString();
-    let maxTemp = forecastData.list[l].main.temp_max;
-    let minTemp = forecastData.list[l].main.temp_min;
-    if(maxTemp > maxTemp3){
-        maxTemp3 = maxTemp;
-    }
-    if (minTemp < minTemp3){
-        minTemp3 = minTemp
-    }
-    date3 = date;
-    };
-    const thirdForecastDay = document.createElement('h3');
-    const forecastMaxTemp3 = document.createElement('p');
-    const forecastMinTemp3 = document.createElement('p');
-    thirdForecastDay.textContent = date3;
-    forecastMaxTemp3.innerHTML = `High: ${maxTemp3}&deg;F`;
-    forecastMinTemp3.innerHTML = `Low: ${minTemp3}&deg;F`;
-    day3.appendChild(thirdForecastDay);
-    day3.appendChild(forecastMaxTemp3);
-    day3.appendChild(forecastMinTemp3);
-    
- 
-
+    forecastTemp2.innerHTML = `${data.list[20].main.temp.toFixed(1)}&deg;C`;
+    const iconsrc2 = `https://openweathermap.org/img/w/${data.list[20].weather[0].icon}.png`;
+    let desc2 = data.list[20].weather[0].description;
+    forecastIcon2.setAttribute("src", iconsrc2);
+    forecastIcon2.setAttribute("alt", "weather icon");
+    forecastDesc2.textContent = `${desc2}`;
+    forecastDate2.textContent = getWeekDay(data.list[20].dt);
 }
 
+function getWeekDay(dt) {
+    const week = new Date(dt * 1000);
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return current_day = weekday[week.getDay()];
+}
 
-
-apiFetch();
-forecastFetch();
+weatherAPIFetch();
+forecastAPIFetch();
